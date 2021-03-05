@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
-class Portfolio extends Component {
-  render() {
+const Portfolio = (props) => {
 
-    if(this.props.data){
-      var projects = this.props.data.projects.map(function(projects){
+    if(props.data){
+      var projects = props.data.projects.map(function(projects){
         var projectImage = 'images/portfolio/'+projects.image;
         return <div key={projects.title} className="columns portfolio-item">
            <div className="item-wrap">
@@ -40,6 +39,6 @@ class Portfolio extends Component {
    </section>
     );
   }
-}
+// }
 
 export default Portfolio;
