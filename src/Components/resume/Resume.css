@@ -43,4 +43,11 @@
     font: 15px/24px 'opensans-regular', sans-serif;
     margin-top: 6px;
  }
+ .iconImage {
+    /* background-image: url('images/techStack/reactIcon.jpg'); */
+    background-repeat: no-repeat;
+    padding-left: 30px;  /* width of the image plus a little extra padding */
+    display: block;  /* may not need this, but I've found I do */
+    width:2em;
+ }
  

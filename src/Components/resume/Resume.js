@@ -19,7 +19,9 @@ import './Resume.css'
       })
       var skills = props.data.skills.map(function(skills){
         var className = 'bar-expand '+skills.name.toLowerCase();
-        return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
+        return (<li key={skills.name}>
+          
+          <span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>)
       })
     }
 
@@ -67,7 +69,8 @@ import './Resume.css'
 
 				<div className="bars">
 				   <ul className="skills">
-					  {skills}
+              {skills}
+					  
 					</ul>
 				</div>
 			</div>
