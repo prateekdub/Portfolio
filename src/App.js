@@ -1,17 +1,17 @@
 import React, { Component, lazy, Suspense } from 'react';
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 import $ from 'jquery';
 import './App.css';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Header from './Components/header/Header';
+// import Footer from './Components/Footer';
 // import About from './Components/About';
-import Resume from './Components/Resume';
-import Contact from './Components/Contact';
-import Testimonials from './Components/Testimonials';
-import Portfolio from './Components/Portfolio';
+// import Resume from './Components/Resume';
+// import Contact from './Components/Contact';
+// import Testimonials from './Components/Testimonials';
+// import Portfolio from './Components/Portfolio';
 // import React, { lazy, Suspense } from ‘react’;
 
-const LoadLater = lazy(() => import('./LoadLater'));
+// const LoadLater = lazy(() => import('./LoadLater'));
 
 class App extends Component {
 
@@ -22,8 +22,8 @@ class App extends Component {
       resumeData: {}
     };
 
-    ReactGA.initialize('UA-110570651-1');
-    ReactGA.pageview(window.location.pathname);
+    // ReactGA.initialize('UA-110570651-1');
+    // ReactGA.pageview(window.location.pathname);
 
   }
 
@@ -73,10 +73,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* <p>ddd</p> */}
         <Header data={this.state.resumeData.main}/>
-        <Suspense fallback={<h1>Still Loading…</h1>}>
+        {/* <Suspense fallback={<h1>Still Loading…</h1>}>
         <LoadLater resumeData={this.state.resumeData}/>
-        </Suspense>
+        </Suspense> */}
         {/* <Resume data={this.state.resumeData.resume}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
         <Testimonials data={this.state.resumeData.testimonials}/>
