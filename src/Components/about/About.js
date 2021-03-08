@@ -9,10 +9,10 @@ const About = (props) => {
    return (
       <section id="about">
       <div className="row">
-         <div className="three columns">
+         <div className="four columns">
             <img className="profile-pic"  src={'images/'+model.image} alt="Profile Pic" />
          </div>
-         <div className="nine columns main-col">
+         <div className="eight columns main-col">
             <h2>About Me</h2>
 
             <p>{model.bio}</p>
@@ -30,7 +30,7 @@ const About = (props) => {
                </div>
                <div className="columns download">
                   <p>
-                     <a href={model.resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
+                     <a href="Prateek_Dubey_Software_Developer.pdf"  download="Prateek-Resume" className="button"><i className="fa fa-download"></i>Download Resume</a>
                   </p>
                </div>
             </div>
