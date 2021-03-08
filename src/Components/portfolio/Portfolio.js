@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './Portfolio.css'
 const Portfolio = (props) => {
 
     if(props.data){
