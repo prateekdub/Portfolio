@@ -11,7 +11,7 @@ import Header from './Components/header/Header';
 // import Portfolio from './Components/Portfolio';
 // import React, { lazy, Suspense } from ‘react’;
 
-// const LoadLater = lazy(() => import('./LoadLater'));
+const LoadLater = lazy(() => import('./LoadLater'));
 
 class App extends Component {
 
@@ -75,9 +75,9 @@ class App extends Component {
       <div className="App">
         {/* <p>ddd</p> */}
         <Header data={this.state.resumeData.main}/>
-        {/* <Suspense fallback={<h1>Still Loading…</h1>}>
+        <Suspense fallback={<h1>Still Loading…</h1>}>
         <LoadLater resumeData={this.state.resumeData}/>
-        </Suspense> */}
+        </Suspense>
         {/* <Resume data={this.state.resumeData.resume}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
         <Testimonials data={this.state.resumeData.testimonials}/>
